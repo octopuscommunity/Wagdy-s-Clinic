@@ -423,6 +423,10 @@ table { max-width: 100%; overflow-x: auto; display: block; }
 .script-body > div { overflow-wrap: break-word; word-wrap: break-word; }
 .vo-text, .notes-text, .hook-text, .shot-desc { word-break: break-word; }
 
+
+/* week-row بدون wr-day */
+.week-row:not(:has(.wr-day)) { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.week-row:not(:has(.wr-day)) .wr-c { flex: 1; }
 </style>
 </head>
 <body>
@@ -565,21 +569,19 @@ table { max-width: 100%; overflow-x: auto; display: block; }
       <div class="mhn"><span class="mhn-val">20</span><span class="mhn-lbl">ريل</span></div>
       <div class="mhn"><span class="mhn-val">4</span><span class="mhn-lbl">AI Visuals</span></div>
       <div class="mhn"><span class="mhn-val">8</span><span class="mhn-lbl">تصاميم</span></div>
-      <div class="mhn"><span class="mhn-val">50+</span><span class="mhn-lbl">حجز هدف</span></div>
     </div>
   </div>
 </div>
 
 <div class="week-block">
   <div class="week-hdr"><span class="week-num">الأسبوع التمهيدي</span><span class="week-title">للتصوير والمونتاج فقط — الإعداد والإنتاج</span></div>
-  <div class="week-body">
-    <div class="week-row"><span class="wr-day">السبت</span><span class="wr-c">REEL ONE — "جدي ما فتحش عيادة" | مصر الجديدة</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
-    <div class="week-row"><span class="wr-day">الأحد</span><span class="wr-c">AI Visual 01 — "The W Forms" شعار يتشكل</span><span class="wr-t"><span class="tp tp-ai">AI Visual</span></span></div>
-    <div class="week-row"><span class="wr-day">الاثنين</span><span class="wr-c">REEL TWO — "الكرسي بتاع جدي" | مصر الجديدة</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
-    <div class="week-row"><span class="wr-day">الأربعاء</span><span class="wr-c">كاروسيل — "الجدول الزمني للإرث 1970 ← 2026"</span><span class="wr-t"><span class="tp tp-car">كاروسيل</span></span></div>
-    <div class="week-row"><span class="wr-day">الجمعة</span><span class="wr-c">REEL THREE — "إحنا الجيل الثالث — القصة لسه بتبدأ"</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
-  </div>
-</div>
+    <div class="week-body">
+    <div class="week-row"><span class="wr-c">REEL ONE — "جدي ما فتحش عيادة" | مصر الجديدة</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
+    <div class="week-row"><span class="wr-c">AI Visual 01 — "The W Forms" شعار يتشكل</span><span class="wr-t"><span class="tp tp-ai">AI Visual</span></span></div>
+    <div class="week-row"><span class="wr-c">REEL TWO — "الكرسي بتاع جدي" | مصر الجديدة</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
+    <div class="week-row"><span class="wr-c">كاروسيل — "الجدول الزمني للإرث 1970 ← 2026"</span><span class="wr-t"><span class="tp tp-car">كاروسيل</span></span></div>
+    <div class="week-row"><span class="wr-c">REEL THREE — "إحنا الجيل الثالث — القصة لسه بتبدأ"</span><span class="wr-t"><span class="tp tp-s">سرد سينمائي</span></span></div>
+  </div></div>
 
 <div class="week-block">
   <div class="week-hdr"><span class="week-num">الأسبوع 2</span><span class="week-title">الـ Reveal الكامل + أول ريل شخصية</span></div>
@@ -645,7 +647,6 @@ table { max-width: 100%; overflow-x: auto; display: block; }
       <div class="mhn"><span class="mhn-val">20</span><span class="mhn-lbl">ريل</span></div>
       <div class="mhn"><span class="mhn-val">4</span><span class="mhn-lbl">AI Visuals</span></div>
       <div class="mhn"><span class="mhn-val">8</span><span class="mhn-lbl">تصاميم</span></div>
-      <div class="mhn"><span class="mhn-val">200+</span><span class="mhn-lbl">حجز هدف</span></div>
     </div>
   </div>
 </div>
@@ -719,7 +720,6 @@ table { max-width: 100%; overflow-x: auto; display: block; }
       <div class="mhn"><span class="mhn-val">20</span><span class="mhn-lbl">ريل</span></div>
       <div class="mhn"><span class="mhn-val">4</span><span class="mhn-lbl">AI Visuals</span></div>
       <div class="mhn"><span class="mhn-val">8</span><span class="mhn-lbl">تصاميم</span></div>
-      <div class="mhn"><span class="mhn-val">500+</span><span class="mhn-lbl">حجز هدف</span></div>
     </div>
   </div>
 </div>
